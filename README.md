@@ -24,16 +24,24 @@
     - [x] Check user existing and save user to mongdb
     - [x] JWT with cookie session
     - [x] Tranform response to common properties
+- [x] signin user
+    - [x] Refactor, add common request validation middleware
+    - [x] Signin logic
+        - [x] Validate user data
+        - [x] Check do user exist?
+        - [x] Generate JWT
+        - [x] Store JWT to session object
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
 
 - Main enpoints:
+* Signup
 Endpoind: `https://ticketing.dev/api/users/signup`
 Body:
 ```json
 {
-    "email": "fsdfhjkghjghjsdf@dev.to",
+    "email": "test@dev.to",
     "password": 1234
 }
 ```
@@ -42,5 +50,22 @@ Result and cookie has been set.
 {
     "id": "60af7cb69f26ab003262e274",
     "email": "fsdfhjkghjghjsdf@dev.to"
+}
+```
+
+* Signin
+Endpoind: `https://ticketing.dev/api/users/signin`
+Body:
+```json
+{
+    "email": "test@dev.to",
+    "password": 1234
+}
+```
+Result and cookie has been set.
+```json
+{
+    "id": "60af7cb69f26ab003262e274",
+    "email": "test@dev.to"
 }
 ```
