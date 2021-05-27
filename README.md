@@ -33,6 +33,7 @@
         - [x] Store JWT to session object
 - [x] current user api
 - [x] signing out api
+- [x] create current-user middleware to handle check jwt
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
