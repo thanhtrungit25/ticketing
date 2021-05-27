@@ -32,7 +32,7 @@
         - [x] Generate JWT
         - [x] Store JWT to session object
 - [x] current user api
-- [ ] signing out api
+- [x] signing out api
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
