@@ -40,6 +40,8 @@
     - [x] Add test dependencies
     - [x] Add test environment setup file
     - [x] First test valid signup enpoint
+    - [x] Unit test signup
+    - [x] Unit test signin
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
