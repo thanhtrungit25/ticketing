@@ -51,7 +51,7 @@
         - [x] Build a Next image with Dockerfile `docker build -t trungdt25/client .`
         - [x] Pust Docker client image to docker hub `docker push trungdt25/client`
         - [x] Add configure to k8 and skallfold to deploy pod client
-
+    - [x] Speed up file change detection of Next (maybe delete client pod, this will auto regenerate client pod again with update code)
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
