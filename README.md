@@ -42,6 +42,7 @@
     - [x] First test valid signup enpoint
     - [x] Unit test signup
     - [x] Unit test signin
+    - [x] Unit test signout
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
