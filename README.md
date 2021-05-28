@@ -18,7 +18,7 @@
 - Inspect specific pod with ID: `kubectl describe pod [pod_id]`
 
 # FEATURES
-- auth service
+- Auth service
     - [x] signup user api
         - [x] Error handling consistence
         - [x] Check user existing and save user to mongdb
@@ -35,6 +35,9 @@
         - [x] Signing out api
         - [x] Create current-user middleware to handle check jwt
         - [x] Add require auth middleware to check user is logged in
+- Testing isolated microservices
+    - [x] Extracting to App express component file
+    - [x] Add test dependencies
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
