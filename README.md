@@ -19,21 +19,22 @@
 
 # FEATURES
 - auth service
-  - [x] signup user api
-    - [x] Error handling consistence
-    - [x] Check user existing and save user to mongdb
-    - [x] JWT with cookie session
-    - [x] Tranform response to common properties
-- [x] signin user api
-    - [x] Refactor, add common request validation middleware
-    - [x] Signin logic
+    - [x] signup user api
+        - [x] Error handling consistence
+        - [x] Check user existing and save user to mongdb
+        - [x] JWT with cookie session
+        - [x] Tranform response to common properties
+        - [x] signin user api
+        - [x] Refactor, add common request validation middleware
+    - [x] signin logic
         - [x] Validate user data
         - [x] Check do user exist?
         - [x] Generate JWT
         - [x] Store JWT to session object
-- [x] current user api
-- [x] signing out api
-- [x] create current-user middleware to handle check jwt
+    - [x] current user api
+        - [x] Signing out api
+        - [x] Create current-user middleware to handle check jwt
+        - [x] Add require auth middleware to check user is logged in
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
