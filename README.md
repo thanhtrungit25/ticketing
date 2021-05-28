@@ -47,8 +47,10 @@
     - [x] Add global auth helper function
 - Frontend with Next
     - [x] Bootstrap Nextjs
-    - [ ] Running Next in kubernetes
+    - [x] Running Next in kubernetes
         - [x] Build a Next image with Dockerfile `docker build -t trungdt25/client .`
+        - [x] Pust Docker client image to docker hub `docker push trungdt25/client`
+        - [x] Add configure to k8 and skallfold to deploy pod client
 
 
 # Testing
