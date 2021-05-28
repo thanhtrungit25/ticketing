@@ -45,6 +45,9 @@
     - [x] Unit test signout
     - [x] Unit test currentuser
     - [x] Add global auth helper function
+- Frontend with Next
+    - [x] Bootstrap Nextjs
+    - [ ] Running Next in kubernetes
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
