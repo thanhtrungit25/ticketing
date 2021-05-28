@@ -48,6 +48,8 @@
 - Frontend with Next
     - [x] Bootstrap Nextjs
     - [ ] Running Next in kubernetes
+        - [x] Build a Next image with Dockerfile `docker build -t trungdt25/client .`
+
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
