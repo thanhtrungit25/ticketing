@@ -38,6 +38,8 @@
 - Testing isolated microservices
     - [x] Extracting to App express component file
     - [x] Add test dependencies
+    - [x] Add test environment setup file
+    - [x] First test valid signup enpoint
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
