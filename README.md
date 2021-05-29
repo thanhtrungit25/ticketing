@@ -60,6 +60,16 @@
     - [x] Consider context (client or server NextJS) loading currentuser api from Landing Page
         - [x] Need to specific Ingress Service name and namespace to build and URL that fetch data currentuser from Next server
         - [x] Buid and helper with axios to spefic context with baseURL
+- Code sharing and reused
+    - [x] Login npm and create public organization name `mictickets`
+    - [x] Create `common` folder and some boilerplace files include index.ts endpoint, typescript config
+    - [x] Create script to publish to `mictickets` package npm
+    - [x] Cut `errors` `middleware` from `auth` folder to `common` folder and re-exporting from `errors` `middleware` folders
+    - [x] Add dependencies from `errors` `middleware` then build, publish again with new version
+    - [x] Stop skaffold and from `auth` folder, install new common package `npm i @mictickets/common'
+    - [x] Relocating some dependencies from `errors` `middleware` to other files of `auth` services and run `npx tsc` to check errors
+    - [x] Re-run skaffold and testing `auth` and `client` services again
+
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
