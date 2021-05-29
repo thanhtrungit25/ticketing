@@ -16,6 +16,9 @@
 - Show all pods status: `kubectl get pods`
 - Show all services: `kubectl get services`
 - Inspect specific pod with ID: `kubectl describe pod [pod_id]`
+- Get all namespace in kubenertes: `kubectl get namespace`
+- Get all services from specific namespace: `kubectl get services -n [namespace_name]`
+- The pattern URL to ingress service is: `http://[NAMEOFSERVICE].NAMESPACE.svc.cluster.local` (ex: ingress-nginx-controller.ingress-inginx)
 
 # FEATURES
 - Auth service
@@ -52,6 +55,11 @@
         - [x] Pust Docker client image to docker hub `docker push trungdt25/client`
         - [x] Add configure to k8 and skallfold to deploy pod client
     - [x] Speed up file change detection of Next (maybe delete client pod, this will auto regenerate client pod again with update code)
+    - [x] Signup page logic
+    - [x] Redirect to landing page after signin success
+    - [x] Consider context (client or server NextJS) loading currentuser api from Landing Page
+        - [x] Need to specific Ingress Service name and namespace to build and URL that fetch data currentuser from Next server
+        - [x] Buid and helper with axios to spefic context with baseURL
 
 # Testing
 - First check endpoind: `https://ticketing.dev/api/user/currentuser`
