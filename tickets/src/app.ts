@@ -2,7 +2,8 @@ import express from 'express'
 import 'express-async-errors'
 import cookieSession from 'cookie-session'
 import { NotFoundError, errorHandler, currentUser } from '@mictickets/common'
-import { createTicketRouter } from './routes/__test__/new'
+import { createTicketRouter } from './routes/new'
+import { showTicketRouter } from './routes/show'
 
 const app = express()
 app.set('trust proxy', true)
@@ -16,6 +17,7 @@ app.use(
 app.use(currentUser)
 
 app.use(createTicketRouter)
+app.use(showTicketRouter)
 
 app.all('*', async (req, res) => {
   throw new NotFoundError()
